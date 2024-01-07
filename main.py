@@ -3,11 +3,10 @@ import datetime as dt
 import smtplib
 import time
 
-
 LAT = 51.507351
 LNG = -0.127758
-MY_EMAIL = 'jaltura1997@gmail.com'
-PASSWORD = 'gnphcazrmfzwahhx'
+MY_EMAIL = 'TESTEMAIL@gmail.com'  # Put valid email
+PASSWORD = 'APP PASSWORD'  # Put app password
 
 
 def iss_pos():
@@ -27,7 +26,7 @@ def iss_pos():
     # if -5 < distance_lng < 5 and -5 < distance_lng < 5: can also be used to
     # determine distance from ISS
 
-    if LAT-5 < iss_lat < LAT+5 and LNG-5 < iss_lng < LNG+5:
+    if LAT - 5 < iss_lat < LAT + 5 and LNG - 5 < iss_lng < LNG + 5:
         return True
 
 
